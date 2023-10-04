@@ -13,15 +13,15 @@ import javax.sql.DataSource;
 @Configuration
 public class SpringConfig {
 
-    @PersistenceContext
-    EntityManager em;
-    @Bean
-    public MemberService memberService(){
-        return new MemberService(memberRepository());
-    }
+    // @PersistenceContext
+    // EntityManager em;
+    // @Bean
+    // public MemberService memberService(){
+    //     return new MemberService(memberRepository());
+    // }
 
-    @Bean
-    public MemberRepository memberRepository(){
-        return new JpaMemberRepository(em);
-    }
+    // @Bean
+    // public MemberRepository memberRepository(){
+    //     return new JpaMemberRepository(em);
+    // }
 }
